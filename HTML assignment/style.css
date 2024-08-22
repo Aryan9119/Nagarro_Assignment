@@ -1,0 +1,143 @@
+.header {
+	width:fit-content;
+	background-color: rgb(12, 219, 150);
+	top: 0;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	color: white;
+	border: black solid;
+	border-width: 1px;
+	align-items: center;
+}
+html{
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	height: 100%;
+	overflow: auto;
+}
+footer {
+	background-color: rgb(12, 219, 150);
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 0px;
+	;
+	border: black solid;
+	border-width: 1px;
+	border-radius: 2px;
+	height: 30px;
+	color: white;
+}
+
+.inp_form {
+	margin-left: 30px;
+	padding-top: 20px;
+}
+
+input {
+	margin-top: 10px;
+	text-align: left;
+	border-radius: 0.5em;
+	border: black solid;
+	border-width: 1px;
+}
+
+label {
+	font-size: 18px;
+	color: #333;
+	height: 20px;
+	width: 20%;
+	margin-top: 10px;
+	margin-left: 10px;
+	text-align: left;
+	clear: both;
+
+}
+
+@media screen and (min-width:600px) {
+	.vertical {
+		border-left: 4px solid rgb(12, 219, 150);
+		height: 400px;
+		position: absolute;
+		top: 1%;
+		margin-top: 8%;
+		left: 50%;
+
+	}
+}
+
+
+#genderType1 {
+	margin-right: 5px;
+	height: 15px;
+	width: 15px;
+	margin-top: 18px;
+}
+
+#genderType2 {
+	margin-right: 5px;
+	margin-left: 22.7%;
+	height: 15px;
+	width: 15px;
+}
+
+.table-bordered>tbody>tr>th {
+	text-align: left;
+	color: #fff;
+	border: rgb(180, 202, 134) solid;
+	border-width: 3px;
+	background-color: rgb(171, 212, 89)
+}
+
+.table-striped>tbody>tr {
+	width: 50%;
+}
+
+.table-bordered>tbody>tr>td {
+	border: rgb(180, 207, 121) solid;
+	border-width: 3px;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color: #fff;
+}
+
+tr:nth-child(odd) {
+	background-color: #e3edc0;
+}
+
+.submit {
+	background-color: rgb(82, 119, 251);
+	color: #fff;
+	margin-left: 11px;
+}
+
+.reset {
+	margin-left: 15px;
+	background-color: red;
+	color: #fff;
+}
+
+caption {
+	text-align: center;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.animate {
+	animation: fadeIn 5s;
+}

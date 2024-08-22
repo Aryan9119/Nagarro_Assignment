@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=screen-width,height=100%, initial-scale=1.0, shrink-to-fit=no">
+	<title>Student Enrollment Form</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div class="row">
+		<nav class="header">
+			<h2>Student Enrollment Form</h2>
+		</nav>
+	</div>
+	<div class=" vertical "></div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<form id="enrollment-form" name="myForm">
+
+					<div class="inp_form">
+						<label for="name">Name</label>
+						<input class="myInput" type="text" name="name" id="inputName" required><br>
+						<div id="myName" style="color: red;"></div>
+					</div>
+
+
+					<div class="inp_form ">
+						<label for="email">Email</label>
+						<input class="myInput" type="email" name="email" id="inputEmail" required><br>
+						<div id="myEmail" style="color: red;"></div>
+					</div>
+
+
+					<div class="inp_form ">
+						<label for="website">Website</label>
+						<input class="myInput" type="web" name="website" id="inputWebsite" required><br>
+						<span id="myWeb" style="color: red;"></span>
+					</div>
+
+					<div class="inp_form ">
+						<label for="link">Image Link</label>
+						<input class="myInput" type="link" name="imageLink" id="inputLink" required><br>
+						<span id="myImage" style="color: red;"></span>
+					</div>
+
+					<div class="inp_form ">
+						<label for="myGender">Gender</label>
+						<span>
+							<input class="form-check-input" type="radio" name="myGender" id="genderType1" value="Male"
+								required>Male
+							<br>
+							<input class="form-check-input" type="radio" name="myGender" id="genderType2" value="Female"
+								required>Female
+						</span>
+					</div>
+
+					<div class="inp_form ">
+						<label for="mySkill">Skills</label>
+						<input type="checkbox" name="mySkill[]" style="margin-right: 4px;" value="Java">Java
+						<input type="checkbox" name="mySkill[]" style="margin-right: 4px; margin-left:4px ;"
+							value="HTML">HTML
+						<input type="checkbox" name="mySkill[]" style="margin-right: 4px; margin-left:4px ;"
+							value="CSS">CSS
+					</div>
+
+
+				</form>
+				<div class="inp_form ">
+					<input type="button" value="Enroll Students" class="submit" onclick="validateForm();sub();">
+					<input type="reset" value="Clear" class="reset" onclick="resetForm()">
+				</div>
+			</div>
+			<div class="col-md-6" style="padding-left: 5%; padding-right: 5%;">
+				<div class="table-responsive">
+					<table class="table table-striped table-bordered" id="TableScore">
+						<thead>
+							<center><b>Enrolled Students</b>
+								<center>
+						</thead>
+						<tr row>
+							<th>Description</th>
+							<th>Image</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<footer>
+		<p>Copyright 2023-2024 Fresher Training</p>
+	</footer>
+</body>
+
+</html>
